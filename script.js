@@ -55,3 +55,12 @@ window.addEventListener('scroll', () => {
     
     lastScroll = currentScroll;
 });
+
+// Handle "Join Now" button click
+document.querySelectorAll('.btn').forEach(button => {
+    if (button.textContent.trim() === 'Join Now') {
+        button.addEventListener('click', () => {
+            window.location.href = 'app.html';
+        });
+    }
+});

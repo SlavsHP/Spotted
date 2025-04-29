@@ -1,20 +1,26 @@
 /* Base styles */
 :root {
-    --color-coral-50: #fff5f5;
-    --color-coral-100: #ffe0e0;
-    --color-coral-200: #ffc5c5;
-    --color-coral-300: #ff9e9e;
-    --color-coral-400: #ff6b6b;
-    --color-coral-500: #ff5252;
-    --color-coral-600: #ff3838;
-    --color-coral-700: #ff1f1f;
-    --color-coral-800: #ff0000;
-    --color-coral-900: #e50000;
+    --color-primary-50: #f0f9ff;
+    --color-primary-100: #e0f2fe;
+    --color-primary-200: #bae6fd;
+    --color-primary-300: #7dd3fc;
+    --color-primary-400: #38bdf8;
+    --color-primary-500: #0ea5e9;
+    --color-primary-600: #0284c7;
+    --color-primary-700: #0369a1;
+    --color-primary-800: #075985;
+    --color-primary-900: #0c4a6e;
     
-    --color-teal-400: #4ecdc4;
-    --color-teal-500: #38b2ac;
-    
-    --color-yellow-500: #ffe66d;
+    --color-teal-50: #f0fdfa;
+    --color-teal-100: #ccfbf1;
+    --color-teal-200: #99f6e4;
+    --color-teal-300: #5eead4;
+    --color-teal-400: #2dd4bf;
+    --color-teal-500: #14b8a6;
+    --color-teal-600: #0d9488;
+    --color-teal-700: #0f766e;
+    --color-teal-800: #115e59;
+    --color-teal-900: #134e4a;
 }
 
 * {
@@ -27,7 +33,7 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
     color: #333;
-    background-color: #f5f5f5;
+    background-color: var(--color-primary-50);
 }
 
 .container {
@@ -57,7 +63,7 @@ body {
 }
 
 .nav-logo {
-    color: var(--color-coral-500);
+    color: var(--color-primary-600);
     font-weight: 700;
     font-size: 1.5rem;
     text-decoration: none;
@@ -77,7 +83,7 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--color-coral-500);
+    color: var(--color-primary-600);
 }
 
 /* Buttons */
@@ -100,12 +106,21 @@ body {
 }
 
 .btn-primary {
-    background-color: var(--color-coral-500);
+    background-color: var(--color-primary-600);
     color: white;
 }
 
 .btn-primary:hover {
-    background-color: var(--color-coral-600);
+    background-color: var(--color-primary-700);
+}
+
+.btn-secondary {
+    background-color: var(--color-teal-500);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-teal-600);
 }
 
 .btn-outline {
@@ -166,6 +181,7 @@ body {
     text-align: center;
     font-size: 2.25rem;
     margin-bottom: 1rem;
+    color: var(--color-primary-900);
 }
 
 .section-subtitle {
@@ -185,23 +201,26 @@ body {
 .feature-card {
     text-align: center;
     padding: 2rem;
-    background-color: #f8f8f8;
+    background-color: var(--color-primary-50);
     border-radius: 0.5rem;
     transition: transform 0.2s;
+    border: 1px solid var(--color-primary-100);
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .feature-icon {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: var(--color-primary-600);
 }
 
 .feature-card h3 {
     margin-bottom: 1rem;
-    color: #333;
+    color: var(--color-primary-900);
 }
 
 .feature-card p {
@@ -211,7 +230,7 @@ body {
 /* About Section */
 .about {
     padding: 5rem 0;
-    background-color: #f8f8f8;
+    background-color: var(--color-primary-50);
 }
 
 .about-content {
@@ -224,6 +243,7 @@ body {
 .about-text h2 {
     font-size: 2.25rem;
     margin-bottom: 1.5rem;
+    color: var(--color-primary-900);
 }
 
 .about-text p {
@@ -244,7 +264,7 @@ body {
 
 .about-list li::before {
     content: "✓";
-    color: var(--color-coral-500);
+    color: var(--color-teal-500);
     position: absolute;
     left: 0;
 }
@@ -259,6 +279,10 @@ body {
 .contact {
     padding: 5rem 0;
     background-color: white;
+}
+
+.contact h2 {
+    color: var(--color-primary-900);
 }
 
 .contact-form {
@@ -281,9 +305,16 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-primary-200);
     border-radius: 0.375rem;
     font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary-500);
+    box-shadow: 0 0 0 2px var(--color-primary-100);
 }
 
 .form-group textarea {
@@ -293,7 +324,7 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #333;
+    background-color: var(--color-primary-900);
     color: white;
     padding: 4rem 0 2rem;
 }
@@ -306,7 +337,7 @@ body {
 }
 
 .footer-section h3 {
-    color: var(--color-coral-500);
+    color: var(--color-teal-400);
     margin-bottom: 1rem;
 }
 
@@ -327,12 +358,50 @@ body {
 
 .footer-section a:hover {
     opacity: 1;
+    color: var(--color-teal-400);
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* App Features */
+.app-features {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.app-card {
+    background-color: var(--color-primary-50);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--color-primary-100);
+    transition: all 0.3s ease;
+}
+
+.app-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.app-card h3 {
+    color: var(--color-primary-900);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.app-card p {
+    color: #666;
+    margin-bottom: 1rem;
 }
 
 /* Responsive Design */
@@ -355,5 +424,9 @@ body {
     
     .btn {
         width: 100%;
+    }
+    
+    .app-grid {
+        grid-template-columns: 1fr;
     }
 }
