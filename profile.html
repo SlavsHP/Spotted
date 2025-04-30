@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotted - Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Spotted</a>
+            <div class="nav-links">
+                <a href="discover.html" class="nav-link">Discover</a>
+                <a href="friends.html" class="nav-link">Friends</a>
+                <a href="profile.html" class="nav-link active">Profile</a>
+                <button class="btn btn-primary">Add Spot</button>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 4rem;">
+        <section class="profile-section">
+            <div class="container">
+                <div class="profile-header">
+                    <div class="profile-cover"></div>
+                    <div class="profile-info">
+                        <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg" alt="Emma Wilson" class="profile-avatar">
+                        <div class="profile-details">
+                            <h2>Emma Wilson</h2>
+                            <p class="profile-bio">English Literature student at University of Bath. Coffee enthusiast and always on the lookout for cozy study spots!</p>
+                            <div class="profile-stats">
+                                <div class="stat">
+                                    <span class="stat-number">45</span>
+                                    <span class="stat-label">Spots</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">128</span>
+                                    <span class="stat-label">Friends</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">312</span>
+                                    <span class="stat-label">Reviews</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline edit-profile-btn">Edit Profile</button>
+                    </div>
+                </div>
+
+                <div class="profile-content">
+                    <div class="profile-tabs">
+                        <button class="tab-button active">My Spots</button>
+                        <button class="tab-button">Reviews</button>
+                        <button class="tab-button">Saved</button>
+                    </div>
+
+                    <div class="spots-grid">
+                        <div class="spot-card">
+                            <img src="https://images.pexels.com/photos/1855214/pexels-photo-1855214.jpeg" alt="Coffee #1 - Stall Street" class="spot-image">
+                            <div class="spot-content">
+                                <h3>Coffee #1 - Stall Street</h3>
+                                <p class="spot-location">7 Stall Street, Bath BA1 1QE</p>
+                                <div class="spot-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-text">Loved it!</span>
+                                </div>
+                                <p class="spot-review">"Perfect study spot with great coffee and friendly staff. The window seats are amazing for people watching!"</p>
+                                <div class="spot-meta">
+                                    <span class="spot-date">Added 2 days ago</span>
+                                    <span class="spot-likes">24 likes</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="spot-card">
+                            <img src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg" alt="Coffee #1 - Upper Borough Walls" class="spot-image">
+                            <div class="spot-content">
+                                <h3>Coffee #1 - Upper Borough Walls</h3>
+                                <p class="spot-location">Upper Borough Walls, Bath BA1 1RG</p>
+                                <div class="spot-rating">
+                                    <span class="stars">★★★★½</span>
+                                    <span class="rating-text">Really good!</span>
+                                </div>
+                                <p class="spot-review">"Great place for group study sessions. Their chai latte is amazing!"</p>
+                                <div class="spot-meta">
+                                    <span class="spot-date">Added 1 week ago</span>
+                                    <span class="spot-likes">18 likes</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="spot-card">
+                            <img src="https://images.pexels.com/photos/1813466/pexels-photo-1813466.jpeg" alt="Coffee #1 - Kingsmead Square" class="spot-image">
+                            <div class="spot-content">
+                                <h3>Coffee #1 - Kingsmead Square</h3>
+                                <p class="spot-location">Kingsmead Square, Bath BA1 2AE</p>
+                                <div class="spot-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-text">Amazing!</span>
+                                </div>
+                                <p class="spot-review">"Love the outdoor seating area! Perfect for sunny days and their iced coffee is the best in Bath."</p>
+                                <div class="spot-meta">
+                                    <span class="spot-date">Added 2 weeks ago</span>
+                                    <span class="spot-likes">32 likes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Spotted</h3>
+                    <p>Connecting students with authentic local experiences through trusted recommendations.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="friends.html">Friends</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>University of Bath</p>
+                    <p>Bath, BA2 7AY</p>
+                    <p>hello@spotted.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Spotted. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

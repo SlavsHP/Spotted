@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotted - Friends</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Spotted</a>
+            <div class="nav-links">
+                <a href="discover.html" class="nav-link">Discover</a>
+                <a href="friends.html" class="nav-link active">Friends</a>
+                <a href="profile.html" class="nav-link">Profile</a>
+                <button class="btn btn-primary">Add Spot</button>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 4rem;">
+        <section class="friends-section">
+            <div class="container">
+                <div class="friends-header">
+                    <h2>Friends</h2>
+                    <div class="friends-filters">
+                        <input type="text" placeholder="Search friends..." class="search-input">
+                        <button class="btn btn-outline">Find Friends</button>
+                    </div>
+                </div>
+
+                <div class="friends-tabs">
+                    <button class="tab-button active">Your Friends</button>
+                    <button class="tab-button">Friend Requests</button>
+                    <button class="tab-button">Suggestions</button>
+                </div>
+
+                <div class="friends-grid">
+                    <div class="friend-card">
+                        <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg" alt="Emma Wilson" class="friend-avatar">
+                        <div class="friend-info">
+                            <h3>Emma Wilson</h3>
+                            <p class="friend-bio">English Literature student. Love finding cozy cafés!</p>
+                            <div class="friend-stats">
+                                <span>15 spots shared</span>
+                                <span>4 mutual friends</span>
+                            </div>
+                            <div class="friend-actions">
+                                <button class="btn btn-outline">View Profile</button>
+                                <button class="btn btn-primary">Message</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend-card">
+                        <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg" alt="James Thompson" class="friend-avatar">
+                        <div class="friend-info">
+                            <h3>James Thompson</h3>
+                            <p class="friend-bio">Architecture student. Always exploring new study spots!</p>
+                            <div class="friend-stats">
+                                <span>23 spots shared</span>
+                                <span>6 mutual friends</span>
+                            </div>
+                            <div class="friend-actions">
+                                <button class="btn btn-outline">View Profile</button>
+                                <button class="btn btn-primary">Message</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="friend-card">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg" alt="Sarah Chen" class="friend-avatar">
+                        <div class="friend-info">
+                            <h3>Sarah Chen</h3>
+                            <p class="friend-bio">Business student. Foodie exploring Bath's best spots!</p>
+                            <div class="friend-stats">
+                                <span>18 spots shared</span>
+                                <span>3 mutual friends</span>
+                            </div>
+                            <div class="friend-actions">
+                                <button class="btn btn-outline">View Profile</button>
+                                <button class="btn btn-primary">Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Spotted</h3>
+                    <p>Connecting students with authentic local experiences through trusted recommendations.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="friends.html">Friends</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>University of Bath</p>
+                    <p>Bath, BA2 7AY</p>
+                    <p>hello@spotted.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Spotted. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotted - Add a Spot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Spotted</a>
+            <div class="nav-links">
+                <a href="discover.html" class="nav-link">Discover</a>
+                <a href="friends.html" class="nav-link">Friends</a>
+                <a href="profile.html" class="nav-link">Profile</a>
+                <button class="btn btn-primary active">Add Spot</button>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 4rem;">
+        <section class="add-spot-section">
+            <div class="container">
+                <h2>Add a New Spot</h2>
+                <form class="add-spot-form">
+                    <div class="form-group">
+                        <label for="spot-name">Spot Name</label>
+                        <input type="text" id="spot-name" required placeholder="e.g., Coffee #1 Stall Street">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="spot-category">Category</label>
+                        <select id="spot-category" required>
+                            <option value="">Select a category</option>
+                            <option value="cafe">Café</option>
+                            <option value="restaurant">Restaurant</option>
+                            <option value="bar">Bar</option>
+                            <option value="shop">Shop</option>
+                            <option value="activity">Activity</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="spot-address">Address</label>
+                        <input type="text" id="spot-address" required placeholder="e.g., 7 Stall Street, Bath BA1 1QE">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="spot-description">Description</label>
+                        <textarea id="spot-description" required placeholder="Tell us about this place..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Rating</label>
+                        <div class="rating-input">
+                            <span class="star" data-rating="1">★</span>
+                            <span class="star" data-rating="2">★</span>
+                            <span class="star" data-rating="3">★</span>
+                            <span class="star" data-rating="4">★</span>
+                            <span class="star" data-rating="5">★</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="spot-photos">Photos</label>
+                        <div class="photo-upload">
+                            <input type="file" id="spot-photos" multiple accept="image/*">
+                            <div class="upload-placeholder">
+                                <span>Drop photos here or click to upload</span>
+                                <p class="upload-note">Maximum 5 photos, 5MB each</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-outline">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Add Spot</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Spotted</h3>
+                    <p>Connecting students with authentic local experiences through trusted recommendations.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="friends.html">Friends</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>University of Bath</p>
+                    <p>Bath, BA2 7AY</p>
+                    <p>hello@spotted.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Spotted. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
